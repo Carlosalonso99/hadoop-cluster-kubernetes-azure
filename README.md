@@ -47,12 +47,7 @@ El proveedor `Microsoft.ExtendedLocation` es necesario para usar Azure Arc y fun
 
 ### 3. Habilitar Azure Arc en el Clúster AKS
 
-Azure Arc te permite gestionar clústeres de Kubernetes fuera de Azure, como si fueran recursos nativos de Azure.
-
-- **Habilitar las características necesarias para Azure Arc**:
-  ```bash
-  az connectedk8s enable-features -n <clusterName> -g <resourceGroupName> --features cluster-connect custom-locations
-  ```
+Azure Arc te permite gestionar clústeres de Kubernetes fuera de Azure, como si fueran recursos nativos de Azure. Este paso lo realizaremos desde la interfaz gráfica de Azure.
 
   - Si utilizas una **entidad de servicio** y no tienes suficientes permisos, podrías recibir una advertencia. En este caso:
     1. Inicia sesión con una cuenta de usuario.
@@ -67,22 +62,7 @@ Azure Arc te permite gestionar clústeres de Kubernetes fuera de Azure, como si 
 
 ### 4. Crear una Ubicación Personalizada
 
-Las ubicaciones personalizadas permiten desplegar servicios de Azure directamente en el clúster Kubernetes.
-
-- **Obtener el ID del clúster conectado**:
-  ```bash
-  az connectedk8s show -n <clusterName> -g <resourceGroupName>  --query id -o tsv
-  ```
-
-- **Obtener el ID de la extensión de clúster**:
-  ```bash
-  az k8s-extension show --name <extensionInstanceName> --cluster-type connectedClusters -c <clusterName> -g <resourceGroupName> --query id -o tsv
-  ```
-
-- **Crear la ubicación personalizada**:
-  ```bash
-  az customlocation create -n <customLocationName> -g <resourceGroupName> --namespace <name of namespace> --host-resource-id <connectedClusterId> --cluster-extension-ids <extensionId>
-  ```
+Las ubicaciones personalizadas permiten desplegar servicios de Azure directamente en el clúster Kubernetes. Este paso también lo realizaremos desde la interfaz gráfica de Azure.
 
 ## Paso 1: Crear un Clúster de Kubernetes (AKS) en Azure
 
