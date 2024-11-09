@@ -25,9 +25,9 @@ Este README proporciona una guía paso a paso para desplegar un clúster de Hado
 
   Si ya tienes las extensiones instaladas, actualízalas:
   ```bash
-  az extension update --name connectedk8s
-  az extension update --name k8s-extension
-  az extension update --name customlocation
+  az extension update --name connectedk8s --allow-preview true
+  az extension update --name k8s-extension --allow-preview true
+  az extension update --name customlocation --allow-preview true
   ```
 
 ### 2. Registrar el Proveedor `Microsoft.ExtendedLocation`
