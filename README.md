@@ -82,6 +82,8 @@ Las ubicaciones personalizadas permiten desplegar servicios de Azure directament
    - Selecciona **Método de conexión manual**.
    - Haz clic en **Siguiente: Autenticación**.
 
+<img width="394" alt="{BE46256D-6783-4A60-B917-14B543F42B9F}" src="https://github.com/user-attachments/assets/73ecbd91-31db-4c62-9b9f-e88c878d37f9">
+
 4. **Autenticación y Scripts**:
    - Azure te mostrará un script que debes ejecutar para conectar el clúster. Este script es necesario para registrar el clúster con Azure Arc.
    - Copia el script y ejecútalo en el terminal de la máquina que tenga acceso al clúster AKS.
