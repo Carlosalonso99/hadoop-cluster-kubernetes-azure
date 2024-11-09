@@ -18,9 +18,9 @@ Este README proporciona una guía paso a paso para desplegar un clúster de Hado
 
   Ejecuta los siguientes comandos para instalarlas:
   ```bash
-  az extension add --name connectedk8s
-  az extension add --name k8s-extension
-  az extension add --name customlocation
+  az extension add --name connectedk8s --allow-preview true
+  az extension add --name k8s-extension --allow-preview true
+  az extension add --name customlocation --allow-preview true
   ```
 
   Si ya tienes las extensiones instaladas, actualízalas:
