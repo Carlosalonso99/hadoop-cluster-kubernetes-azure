@@ -65,6 +65,8 @@ Las ubicaciones personalizadas permiten desplegar servicios de Azure directament
    - **Región**: Selecciona la región que sea más adecuada para ti (por ejemplo, `West Europe` o la más cercana a tu ubicación).
    - **Nodo**: Elige un tamaño de nodo pequeño (1 o 2 nodos) para este ejercicio.
 
+     
+
 4. Revisión y Creación: Haz clic en **Revisar + crear** y luego en **Crear**. Este proceso tomará unos minutos.
 
 ### 2. Conectar el Clúster a Azure Arc
@@ -124,3 +126,4 @@ Cuando el clúster esté listo, necesitarás obtener las credenciales para gesti
   ```
 
 Esto copiará las credenciales necesarias para gestionar el clúster desde `kubectl`.
+<img width="352" alt="{EF9F7788-94D5-4D3A-891B-D22E159DF1BC}" src="https://github.com/user-attachments/assets/3df20b24-3620-4123-b3f1-fedd6dd1e22f">
